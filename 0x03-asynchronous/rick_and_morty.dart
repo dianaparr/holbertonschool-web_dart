@@ -1,9 +1,9 @@
 import "package:http/http.dart" as http;
 import 'dart:convert';
 
-printBbCharacters() async {
+printRmCharacters() async {
   try {
-    final res = await http.get(Uri.parse('https://www.breakingbadapi.com/api/characters'),
+    final res = await http.get(Uri.parse('https://rickandmortyapi.com/api/character'),
     );
     var json = jsonDecode(res.body);
 
