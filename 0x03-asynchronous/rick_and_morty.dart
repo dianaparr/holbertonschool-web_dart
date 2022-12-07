@@ -8,7 +8,7 @@ printRmCharacters() async {
     var json = jsonDecode(res.body);
 
     for (var idx = 0; idx < json.length; idx++) {
-      print("${json[idx]['name']}");
+      print("${json['results'][idx]['name']}");
     }
   } catch (err) {
     print('error caught: $err');
